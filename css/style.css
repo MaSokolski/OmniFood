@@ -49,22 +49,6 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font-family: 'Rubik', sans-serif;
-	line-height: 1;
-	font-weight: 400;
-	color: #555;
-}
-
 /* ********************************** */
 /* HEADER  */
 /* ********************************** */
@@ -76,6 +60,7 @@ body {
 
 	height: 9.6rem;
 	padding: 0 4.8rem;
+	position: relative;
 }
 .logo {
 	height: 2.2rem;
@@ -112,7 +97,26 @@ body {
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
 	background-color: #cf711f;
+} /* MOBILE ICON */
+
+.btn-mobile-nav {
+	border: none;
+	background: none;
+	cursor: pointer;
+
+	display: none;
 }
+
+.icon-mobile-nav {
+	height: 4.8rem;
+	width: 4.8rem;
+	color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+	display: none;
+}
+
 /* ********************************** */
 /* HERO SECTION */
 /* ********************************** */
@@ -390,23 +394,23 @@ body {
 .section-pricing {
 	padding: 9.6rem 0;
 }
-.princing-plan {
+.pricing-plan {
 	border-radius: 11px;
 	width: 75%;
 }
 
-.princing-plan--starter {
+.pricing-plan--starter {
 	justify-self: end;
 	border: 2px solid #fdf2e9;
 	padding: 4.6rem;
 }
-.princing-plan--complete {
+.pricing-plan--complete {
 	background-color: #fdf2e9;
 	padding: 4.8rem;
 	position: relative;
 	overflow: hidden;
 }
-.princing-plan--complete:after {
+.pricing-plan--complete:after {
 	content: 'Best vaule';
 	position: absolute;
 	text-transform: uppercase;

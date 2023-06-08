@@ -16,28 +16,33 @@
 
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/queries.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="js/script.js"></script>
     <title>Omnifood</title>
 </head>
 <header class="header">
     <a href="#">
-        <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo">
+        <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
     </a>
+
     <nav class="main-nav">
         <ul class="main-nav-list">
-            <li><a href="#" class="main-nav-link">How it works</a></li>
-            <li><a href="#" class="main-nav-link">Meals</a></li>
-            <li><a href="#" class="main-nav-link">Testimonials</a></li>
-            <li><a href="#" class="main-nav-link">Pricing</a></li>
-            <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
+            <li><a class="main-nav-link" href="#how">How it works</a></li>
+            <li><a class="main-nav-link" href="#meals">Meals</a></li>
+            <li>
+                <a class="main-nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
     </nav>
 
-
-
-
-
-
+    <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
 </header>
 <main>
 
@@ -67,7 +72,7 @@
                         <p class="delivered-text"><span>250,000+</span> meals delivered last year!</p>
                     </div>
                 </div>
-                <div class="hero-image-box">
+                <div class="hero-img-box">
                     <img src="img/hero.png" class="hero-img"
                         alt="Woman enjoying food, meals in storage container, and food bowl on a table">
                 </div>
@@ -97,7 +102,6 @@
             </div>
 
             <div class="container grid grid--2-cols grid--center-v">
-                <!-- STEP 01 -->
                 <div class="step-text-box">
                     <p class="step-number">01</p>
                     <h3 class="heading-tertiary">Tell us what you like (and what not):</h3>
@@ -110,7 +114,6 @@
                 <div class="step-img-box">
                     <img src="img/app/app-screen-1.png" class="step-img" alt="Iphone app preferences selestion screen">
                 </div>
-                <!-- STEP 02 -->
                 <div class="step-img-box">
                     <img src="img/app/app-screen-2.png" class="step-img" alt="Iphone app meal approving plan">
                 </div>
@@ -340,7 +343,7 @@
             </div>
 
             <div class="container grid grid--2-cols margin-bottom-md">
-                <div class="princing-plan princing-plan--starter">
+                <div class="pricing-plan pricing-plan--starter">
                     <header class="plan-header">
                         <p class="plan-name">Starter</p>
                         <p class="plan-price"><span>$</span>399</p>
@@ -368,7 +371,7 @@
                     </div>
                 </div>
 
-                <div class="princing-plan princing-plan--complete">
+                <div class="pricing-plan pricing-plan--complete">
                     <header class="plan-header">
                         <p class="plan-name">Complete</p>
                         <p class="plan-price"><span>$</span>649</p>
@@ -480,7 +483,7 @@
         </section>
 </main>
 <footer class="footer">
-    <div class="container grid grid--5-cols">
+    <div class="container grid grid--footer">
         <div class="logo-col">
             <a href="#" class="footer-logo">
                 <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo">
@@ -494,7 +497,8 @@
                 </li>
             </ul>
 
-            <p class="copyright">Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.</p>
+            <p class="copyright">Copyright &copy; <span class="year">2027</span> by Omnifood, Inc. All rights reserved.
+            </p>
         </div>
         <div class="address-column">
             <p class="footer-heading">Contact us</p>
@@ -539,8 +543,7 @@
 
 
 </footer>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
